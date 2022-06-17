@@ -1,0 +1,374 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #92196c;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #92196c;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*---------------------------------------Navigation------------------------------*/
+
+.navbar ul {
+    text-align: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.navbar a:hover {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.navbar a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 20px;
+    }
+}
+
+.navbar {
+    background-color: #92196c;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: rgb(204, 204, 204) !important;
+}
+
+.active {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+}
+
+
+/*-----------------------------Banner-----------------------------------------------*/
+
+#leftlogo {
+    margin-top: 4px;
+    margin-bottom: 6px;
+    margin-left: 20px;
+}
+
+#bannertext h2 {
+    margin-top: 40px;
+    font-family: 'Overpass', sans-serif;
+    color: #92196c;
+    margin-left: auto;
+    text-align: center;
+    font-size: 26px;
+    margin-right: auto;
+}
+
+#bannertext h5 {
+    margin-left: auto;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    margin-right: auto;
+}
+
+#rightlogo {
+    margin-top: 4px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 990px) {
+    #leftlogo {
+        width: 120px;
+        height: 120px;
+    }
+    #rightlogo {
+        width: 120px;
+        height: 120px;
+    }
+    #bannertext h2 {
+        margin-top: 14px;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+    #bannertext h5 {
+        margin-top: 14px;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+    #bannertext h2 {
+        font-size: 16px;
+    }
+    #bannertext h5 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #leftlogo {
+        width: 90px;
+        height: 90px;
+    }
+    #rightlogo {
+        width: 90px;
+        height: 90px;
+    }
+    #bannertext h2 {
+        margin-top: 14px;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+    #bannertext h5 {
+        margin-top: 14px;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+    #bannertext h2 {
+        font-size: 12px;
+    }
+    #bannertext h5 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #leftlogo {
+        width: 80px;
+        height: 80px;
+    }
+    #rightlogo {
+        width: 80px;
+        height: 80px;
+    }
+    #bannertext h2 {
+        margin-top: 14px;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+    #bannertext h5 {
+        margin-top: 14px;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+    #bannertext h2 {
+        font-size: 10px;
+    }
+    #bannertext h5 {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #leftlogo {
+        width: 60px;
+        height: 60px;
+    }
+    #rightlogo {
+        width: 60px;
+        height: 60px;
+    }
+    #bannertext h2 {
+        margin-top: 14px;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+    #bannertext h5 {
+        margin-top: 14px;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+    #bannertext h2 {
+        font-size: 10px;
+    }
+    #bannertext h5 {
+        font-size: 10px;
+    }
+}
+
+
+/*----------------------Carousel-----------------------------*/
+
+.carousel .carousel-inner {
+    height: 400px;
+}
+
+.carousel-inner .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #92196c;
+    border-width: 6px;
+}
+
+@media(max-width:768px) {
+    .carousel .carousel-inner {
+        height: auto;
+    }
+}
+
+
+/*-------------------------------------home--------------------*/
+
+.container {
+    background-color: #f5f5f5;
+    margin-top: 20px;
+}
+
+#welcometext h3 {
+    margin-top: 20px;
+    color: #92196c;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#welcometext p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#welcomepic {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button a {
+    color: white;
+    font-size: 20px;
+    padding: 4px;
+}
+
+button a:hover {
+    color: #92196c;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    border-color: #92196c;
+}
+
+.btn-primary {
+    background-color: #92196c;
+    border-color: #92196c;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.container1 {
+    text-align: center;
+}
+
+#founder {
+    background-color: #92196c;
+    border-radius: 6px;
+}
+
+#welcometext h2 {
+    margin-top: 24px;
+    color: #92196c;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#welcometext h4 {
+    margin-top: 24px;
+    color: #92196c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/*-----------------------------------Contact----------------*/
+
+#contact p {
+    font-size: 18px;
+    color: #92196c;
+    text-align: center;
+}
+
+#contact i {
+    size: 20px;
+}
+
+#contact a {
+    text-decoration: none;
+    text-align: center;
+    color: #92196c;
+    font-size: 20px;
+}
+
+.container2 {
+    background-color: #92196c;
+    padding: 2px;
+    text-align: center;
+}
+
+.container2 p {
+    font-size: 16px;
+    color: white;
+}
